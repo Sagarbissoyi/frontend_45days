@@ -1,0 +1,101 @@
+dt{
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+article[data-columns="3"] {
+  width: 400px;
+}
+article[data-columns="4"] {
+  width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.topic-games::before {
+  content: "🎮 " / "games";
+}
+
+.topic-weather::before {
+  content: "⛅ " / "cloudy";
+}
+
+.topic-hot::before {
+  content: url("/shared-assets/images/examples/fire.png") / "On fire";
+  margin-right: 6px;
+}
+
+
+
+
+
+
+
+
+.callout {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.callout--note {
+  border-color: rgb(15 15 235);
+  background-color: rgb(15 15 235 / 0.2);
+}
+.callout--warning {
+  border-color: rgb(235 15 15);
+  background-color: rgb(235 15 15 / 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+.callout {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* Default style */
+.callout:not([data-variant]) {
+  border-color: rgb(15 15 15);
+  background-color: rgb(15 15 15 / 0.2);
+}
+.callout[data-variant="note"] {
+  border-color: rgb(15 15 235);
+  background-color: rgb(15 15 235 / 0.2);
+}
+.callout[data-variant="warning"] {
+  border-color: rgb(235 15 15);
+  background-color: rgb(235 15 15 / 0.2);
+}
+
+
+
+
